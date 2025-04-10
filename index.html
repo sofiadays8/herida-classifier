@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Heridas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Clasificador de Heridas</h1>
+    <p>Sube una imagen para clasificar el tipo de herida y recibir recomendaciones.</p>
+    
+    <!-- Botón para cargar imagen -->
+    <input type="file" id="imageUpload" accept="image/*" onchange="handleImageUpload(event)"/>
+    
+    <!-- Contenedor para mostrar la imagen subida -->
+    <div id="imageContainer"></div>
+    
+    <!-- Contenedor para mostrar la predicción -->
+    <div id="label-container"></div>
+
+    <!-- Contenedor para mostrar recomendaciones -->
+    <div id="recomendaciones"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
